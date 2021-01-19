@@ -20,10 +20,10 @@
 const numeri = [0,1,2,3,4,5,6,7,8,9];
 let pari = [];
 let dispari = [];
-let verde = "green";
-var rosso = "red";
+const verde = "green";
+const rosso = "red";
 
-for (var i = 0; i < numeri.length; i++) {
+for (let i = 0; i < numeri.length; i++) {
   if (numeri[i] % 2 == 0){
   pari.push([i]);
 } else {
