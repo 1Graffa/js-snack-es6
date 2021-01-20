@@ -45,7 +45,11 @@ console.log(bici2.peso);
 const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
 let arrayNuovo =[];
 
-//******************************************************************
+myArray.forEach((e) => {
+
+});
+
+//*****************************************************
 // 19/01/2021
 //1) Utilizzando const e/o let. Inserire un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
