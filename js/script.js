@@ -43,11 +43,11 @@ console.log(bici2.peso);
 // Se l’utente inserisce 2 numeri: 1,4 allora selezioniamo 'Pluto', 'Paperino', 'Paperone', 'Paperina'
 
 const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
-let arrayNuovo =[];
+const primoN = prompt("primo numero");
+const secondoN = prompt("secondo numero");
 
-myArray.forEach((e) => {
-
-});
+const numeri = myArray.filter((e,i) => i>=primoN && i<=secondoN);
+console.log(numeri);
 
 //*****************************************************
 // 19/01/2021
