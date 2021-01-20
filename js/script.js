@@ -2,8 +2,8 @@
 // jsnack 1
 // Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal.
-let piuleggera = [];
-const pesi = [];
+
+
 const bici = [
   {
   nome : "bici fiammante",
@@ -18,7 +18,9 @@ const bici = [
   peso : 12
   }
   ];
-for(i = 0; i < bici.length; i++){
+const pesi = [];
+let piuleggera = [];
+for(let i = 0; i < bici.length; i++){
 pesi.push(parseInt(bici[i].peso));
 }
 piuleggera.push(Math.min(...pesi));
@@ -28,6 +30,9 @@ document.getElementById('piu-leggera').innerHTML =
       ${piuleggera}
  `;
 
+// con destructuring
+const [,bici2,] = bici;
+console.log(bici2.peso);
 
 //*****************************************
 // jsnack 2
@@ -36,6 +41,9 @@ document.getElementById('piu-leggera').innerHTML =
 // Esempio:
 // const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
 // Se l’utente inserisce 2 numeri: 1,4 allora selezioniamo 'Pluto', 'Paperino', 'Paperone', 'Paperina'
+
+const myArray = ['Pippo', 'Pluto', 'Paperino', 'Paperone', 'Paperina', 'Paperoga'];
+let arrayNuovo =[];
 
 //******************************************************************
 // 19/01/2021
